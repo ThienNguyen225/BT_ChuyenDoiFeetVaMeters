@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập chuyển đổi giữa Feet và Meters</title>
+</head>
+<body>
+    <input type="text" id="nhap">
+    <button onclick="doiMet()">Doi qua Met</button>
+    <button onclick="doiFeet()">Doi qua Feet</button>
+    <input type="text" id="result">
+    <script>
+        function doiMet() {
+            let inp = parseFloat(document.getElementById('Nhap').value);
+            let tong = inp * 3.05;
+            document.getElementById('result').value = tong ;
+        }
+        function doiFeet() {
+            var inp = parseFloat(document.getElementById('nhap').value);
+            let tong = inp * 3.279;
+            document.getElementById('result').value = tong ;
+        }
+    </script>
+</body>
+</html>
